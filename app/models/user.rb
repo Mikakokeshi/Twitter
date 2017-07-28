@@ -1,11 +1,12 @@
 class User < ActiveRecord::Base
-  # nameカラムに関するバリデーションを作成してください
   validates :name, {presence: true}
-  
-  # emailカラムに関するバリデーションを作成してください
   validates :email, {presence: true, uniqueness: true}
-  
-  # passwordカラムにバリデーションを設定してください
   validates :password, {presence: true}
+  has_many :posts
+  
+  # インスタンスメソッドpostsを定義してください
+  def posts
+    return Post.where(user_id: self.id)
+  end
   
 end

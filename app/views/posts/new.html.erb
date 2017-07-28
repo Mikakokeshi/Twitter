@@ -1,6 +1,6 @@
 <div class="main posts-new">
   <div class="container">
-    <h1 class="form-heading">投稿する</h1>
+    <h1 class="form-heading">Tweet</h1>
     <%= form_tag("/posts/create") do %>
       <div class="form">
         <div class="form-body">
@@ -14,7 +14,7 @@
           
           <!-- 以下の<%= %>を用いて、初期値が表示されるようにしてください -->
           <textarea name="content"><%= @post.content %></textarea>
-          <input type="submit" value="投稿">
+          <input type="submit" value="Tweet">
         </div>
       </div>
     <% end %>
