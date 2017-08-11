@@ -4,12 +4,7 @@ class PostsController < ApplicationController
   
   def index
     @posts = Post.all.order(created_at: :desc)
-    @posts.each do |post|
-       @user = post.user
-       # 変数@likes_countを定義してください
-       @likes_count = Like.where(post_id: post.id).count
-       @post = post
-      end
+    
   end
   
   def show
