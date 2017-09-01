@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   def index
     @users = User.all
   end
-  \
+  
   def show
     @user = User.find_by(id: params[:id])
   end
@@ -20,6 +20,7 @@ class UsersController < ApplicationController
       name: params[:name],
       email: params[:email],
       image_name: "default_user.jpg",
+      vio: params[:vio],
       password: params[:password]
 
     )
@@ -40,6 +41,8 @@ class UsersController < ApplicationController
     @user = User.find_by(id: params[:id])
     @user.name = params[:name]
     @user.email = params[:email]
+    @user.vio = params[:vio]
+
     
     if params[:image]
       @user.image_name = "#{@user.id}.jpg"
