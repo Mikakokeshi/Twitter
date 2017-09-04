@@ -9,13 +9,9 @@
   * User Profiles (with bios)
   * Reply
   * Edit posts
-
-## Screenshots
-<h1 align="center"><img width="350" height="80" alt="Mikako iijima" src="images/twitter.png">Authentication using Devise</h1>
-
+  
 ## Contribute
 Fork and Pull request.
-
 
 ## To get started
 1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
