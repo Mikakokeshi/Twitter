@@ -20,7 +20,6 @@ class UsersController < ApplicationController
       name: params[:name],
       email: params[:email],
       image_name: "default_user.jpg",
-      vio: params[:vio],
       password: params[:password]
 
     )
