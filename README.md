@@ -2,12 +2,11 @@
 
 # Twitter clone
   This is Twitter clone.
-
 Go : https://mika-twitter.herokuapp.com/
-Tutorial : https://prog-8.com/languages/rails5
   
 ### Built with
 - Rvy on Rails
+Tutorial : https://prog-8.com/languages/rails5
 
 ### To get started, just do the following:
 
