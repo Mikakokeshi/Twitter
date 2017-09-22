@@ -1,12 +1,12 @@
 
 
 # Twitter clone
--This is Twitter clone.
--https://mika-twitter.herokuapp.com/
+This is Twitter clone.
+https://mika-twitter.herokuapp.com/
   
 ### Built with
-- Ruby on Rails
--Tutorial : https://prog-8.com/languages/rails5
+Ruby on Rails
+Tutorial : https://prog-8.com/languages/rails5
 
 ### To get started, just do the following:
 
