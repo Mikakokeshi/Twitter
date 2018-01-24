@@ -12,22 +12,12 @@ class PostsController < ApplicationController
       @user = @post.user
       # 変数@likes_countを定義してください
       @likes_count = Like.where(post_id: @post.id).count
-<<<<<<< HEAD
-  end
-
-  def new
-    @post = Post.new
-  end
-
-=======
     end
-  
+
   def new
     @post = Post.new
   end
-  
-  
->>>>>>> 20fa9b0e62daffaa38cdf94c3863cb97e55b9157
+
   def create
     @post = Post.new(
       content: params[:content],
@@ -69,11 +59,6 @@ class PostsController < ApplicationController
       flash[:notice] = "Permission denied"
       redirect_to("/posts/index")
     end
-<<<<<<< HEAD
   end
 
-=======
-end 
->>>>>>> 20fa9b0e62daffaa38cdf94c3863cb97e55b9157
 end
-
